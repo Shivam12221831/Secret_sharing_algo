@@ -1,4 +1,5 @@
-📜 Overview
+📜 Overview  
+
 This project implements a simplified version of Shamir's Secret Sharing algorithm to reconstruct a secret from polynomial roots using Lagrange interpolation.
 
 Given n shares and a threshold k, the program finds the constant term (c) of the polynomial representing the secret.
@@ -17,7 +18,8 @@ Detects and reports corrupt/wrong shares that lead to inconsistent secrets
 
 ##
 
-🚀 Features
+🚀 Features  
+
 Supports any base encoding for share values (up to base 36)
 
 Uses Lagrange interpolation with modular arithmetic for secret recovery
@@ -30,8 +32,10 @@ Implemented in C++17 with the powerful nlohmann/json library for JSON parsing
 
 ##
 
-🛠️ Getting Started
-Prerequisites
+🛠️ Getting Started  
+
+Prerequisites  
+
 C++17 compatible compiler (e.g., g++)
 
 nlohmann/json single-header (json.hpp) included in the project folder
@@ -55,7 +59,8 @@ List of corrupt shares if any
 
 ##
 
-📂 Repository Structure
+📂 Repository Structure  
+
 Secret_Sharing/
 │── main.cpp           # Main source code
 │── json.hpp           # JSON parser header
@@ -65,7 +70,8 @@ Secret_Sharing/
 
 ##
 
-🔍 How It Works
+🔍 How It Works  
+
 Input Parsing: Reads JSON files to extract n, k, and share data.
 
 Decoding: Converts encoded share values from their respective bases to decimal under modulo arithmetic.
