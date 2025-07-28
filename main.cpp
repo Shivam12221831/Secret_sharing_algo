@@ -114,7 +114,7 @@ void generateCombinations(vector<pair<long long,long long>> &points, int k) {
 }
 
 int main() {
-    ifstream inFile("testcase.json");
+    ifstream inFile("testcase2.json");
     json data;
     inFile >> data;
     
